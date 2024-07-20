@@ -1,103 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #e0e0e0; /* Warna teks umum */
+    background: linear-gradient(135deg, #000000 0%, #1e1e1e 50%, #3f0071 100%); /* Gradien hitam ke ungu */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 0;
+    background: linear-gradient(90deg, #000000 0%, #4c2f77 100%); /* Gradien hitam ke ungu */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e90ff; /* Biru untuk brand navbar */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #e0e0e0; /* Warna teks link navbar */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #1e90ff; /* Biru saat hover */
+    border-radius: 0.25rem;
+    color: #ffffff; /* Teks putih saat hover */
+}
+
+/* Info Section */
+.info-section {
+    padding: 3rem 0;
+    text-align: center;
+    background: linear-gradient(135deg, #1e90ff 0%, #ba55d3 100%); /* Gradien biru ke ungu */
+    border-radius: 10px;
+}
+
+.info-section .logo {
+    max-width: 200px; /* Sesuaikan ukuran logo */
+    border: 3px solid #ba55d3; /* Border logo ungu */
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+/* Features Section */
+.feature-card {
+    background: linear-gradient(145deg, #1e1e1e 0%, #4c2f77 100%); /* Gradien gelap ke ungu */
+    border: 1px solid #1e90ff; /* Border kartu biru */
+}
+
+.feature-card .card-title {
+    color: #ba55d3; /* Warna judul kartu ungu */
+}
+
+.feature-card .card-text {
+    color: #e0e0e0; /* Warna teks kartu */
+}
+
+/* Statics Section */
+.statics-icons i {
+    font-size: 3rem;
+    color: #1e90ff; /* Warna ikon statistik biru */
+}
+
+/* FAQ Section */
+.accordion-button:not(.collapsed) {
+    color: #ba55d3; /* Warna teks tombol accordion aktif */
+    background: linear-gradient(135deg, #1e90ff 0%, #ba55d3 100%); /* Gradien biru ke ungu */
+}
+
+.accordion-button.collapsed {
+    color: #e0e0e0; /* Warna teks tombol accordion non-aktif */
+    background-color: #121212; /* Warna latar belakang tombol accordion non-aktif */
+}
+
+/* Footer */
 .footer-clean {
-  padding:50px 0;
-  color:#f8f9fa;
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #000000 0%, #4c2f77 100%); /* Gradien hitam ke ungu */
 }
 
-.footer-clean h3 {
-  margin-top:0;
-  margin-bottom:12px;
-  font-weight:bold;
-  font-size:16px;
+.footer-clean .item {
+    margin-bottom: 1rem;
 }
 
-.footer-clean ul {
-  padding:0;
-  list-style:none;
-  line-height:1.6;
-  font-size:14px;
-  margin-bottom:0;
+.footer-clean .item h3 {
+    margin-bottom: 1rem;
+    color: #1e90ff; /* Warna heading footer biru */
 }
 
-.footer-clean ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
+.footer-clean .item ul {
+    list-style: none;
+    padding: 0;
 }
 
-.footer-clean ul a:hover {
-  opacity:1;
+.footer-clean .item ul li {
+    margin-bottom: 0.5rem;
 }
 
-.footer-clean .item.social {
-  text-align:right;
+.footer-clean .item ul li a {
+    color: #e0e0e0; /* Warna tautan footer */
 }
 
-.footer-clean .item.social > a {
-  font-size:24px;
-  width:40px;
-  height:40px;
-  line-height:40px;
-  display:inline-block;
-  text-align:center;
-  border-radius:50%;
-  border:1px solid #ccc;
-  margin-left:10px;
-  margin-top:22px;
-  color:inherit;
-  opacity:0.75;
+.footer-clean .item ul li a:hover {
+    color: #ba55d3; /* Warna tautan footer saat hover */
 }
 
-.footer-clean .item.social > a:hover {
-  opacity:0.9;
+/* Social Icons */
+.social a {
+    color: #e0e0e0; /* Warna ikon sosial */
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
 }
 
-.footer-clean .copyright {
-  margin-top:14px;
-  margin-bottom:0;
-  font-size:13px;
-  opacity:0.6;
-}
-hr {
-  border: 1px solid aqua;
-  margin: 1rem;
-  opacity: .25;
-}
-.card {
-  background-color: #2b2d30;
-  color: #fff;
-  margin-left: 9px;
+.social a:hover {
+    color: #1e90ff; /* Warna ikon sosial saat hover */
 }
 
-::-webkit-scrollbar {
-	width: 10px;
-	color: #ffffff;
+/* Page Footer */
+.page-footer {
+    padding: 1rem 0;
+    background: linear-gradient(135deg, #000000 0%, #4c2f77 100%); /* Gradien hitam ke ungu */
 }
 
-::-webkit-scrollbar-track {
-	background: #212529;
+.page-footer a {
+    color: #ba55d3; /* Warna tautan di footer halaman */
 }
 
-::-webkit-scrollbar-thumb {
-	background: #4856ee;
-	border-radius: 30px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background: #3c48c5;
-}
-
-::placeholder {
-	/* Chrome, Firefox, Opera, Safari 10.1+ */
-	color: rgb(219, 219, 219);
-	opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder {
-	/* Internet Explorer 10-11 */
-	color: rgb(219, 219, 219);
-}
-
-::-ms-input-placeholder {
-	/* Microsoft Edge */
-	color: rgb(219, 219, 219);
-}
+.page-footer a:hover {
+    color: #1e90ff; /* Warna tautan di footer halaman saat hover */
+	}
